@@ -1,0 +1,28 @@
+******************************************  Routes for Users  *******************************************************
+
+POST - http://localhost/user/register
+       
+body - {
+     "userId": 1
+     "name": "xyz"
+}
+
+GET - http://localhost/user/allordersuserwise
+
+GET - http://localhost/user/:userId
+
+
+******************************************  Routes for orders  ********************************************************
+
+Post - http://localhost/order/create
+
+body - {
+    "orderId":1,
+    "userId": 1,
+    "subtotal": 470,
+    "date": "09/04/2020"
+}
+
+GET - http://localhost/order/userwiseorders
+
+GET - http://localhost/order/:orderId
